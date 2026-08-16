@@ -1,0 +1,220 @@
+:root {
+  --sapient-indigo: #252A62;
+  --sapient-indigo-hover: #1D214F;
+  --sapient-copper: #C76B3E;
+  --sapient-copper-hover: #A95630;
+  --sapient-ivory: #F7F4EC;
+  --sapient-charcoal: #242735;
+  --sapient-muted: #646674;
+  --sapient-border: rgba(37, 42, 98, .16);
+  --indigo: var(--sapient-indigo);
+  --deep: var(--sapient-indigo-hover);
+  --copper: var(--sapient-copper);
+  --copper-light: var(--sapient-copper);
+  --ivory: var(--sapient-ivory);
+  --charcoal: var(--sapient-charcoal);
+  --grey: var(--sapient-border);
+  --green: var(--sapient-indigo);
+  --slate: var(--sapient-indigo);
+}
+
+body { background: var(--sapient-ivory); color: var(--sapient-charcoal); }
+h1, h2, h3, .section-title { color: var(--sapient-indigo); }
+.section { padding: 104px 0; }
+.eyebrow { color: var(--sapient-copper); }
+.button, .nav-cta, .leadership-nav-cta { border-color: var(--sapient-copper); background: var(--sapient-copper); box-shadow: none; }
+.button:hover, .nav-cta:hover, .leadership-nav-cta:hover { background: var(--sapient-copper-hover); transform: none; }
+.button-secondary { border-color: var(--sapient-indigo); background: transparent; color: var(--sapient-indigo); }
+.button-secondary:hover { border-color: var(--sapient-indigo-hover); background: var(--sapient-indigo-hover); color: #fff; }
+
+.site-header, .leadership-site-header { border-bottom-color: var(--sapient-border); background: #fff; box-shadow: none; }
+.header-inner, .leadership-header-inner { min-height: 82px; }
+.logo, .leadership-logo { display: block; width: 300px; color: inherit; }
+.logo picture, .leadership-logo picture { display: block; }
+.logo img, .leadership-logo img { display: block; width: 300px; height: auto; }
+.logo > span, .leadership-logo > span:not(.leadership-logo-mark) { display: none; }
+.leadership-logo-mark { display: block; width: 300px; height: auto; overflow: visible; border: 0; }
+.leadership-logo-mark::before, .leadership-logo-mark i, .leadership-logo-mark b, .leadership-logo-mark em { display: none; }
+.leadership-logo-mark img { display: block; width: 300px; height: auto; }
+.site-header nav > a, .leadership-site-header nav > a, .leadership-about-menu > a { color: var(--sapient-indigo); }
+.site-header nav > a.active, .leadership-site-header nav > a[aria-current="page"] { color: var(--sapient-indigo); }
+.site-header nav > a::after, .leadership-site-header nav > a:not(.leadership-nav-cta)::after, .leadership-about-menu > a::after { background: var(--sapient-copper); }
+.nav-menu { position: relative; }
+.nav-menu summary { list-style: none; cursor: pointer; color: var(--sapient-indigo); font-size: 12px; font-weight: 600; }
+.nav-menu summary::-webkit-details-marker { display: none; }
+.nav-menu summary::after { content: "⌄"; margin-left: 5px; color: var(--sapient-copper); }
+.nav-menu > div { position: absolute; top: 26px; left: -16px; display: grid; min-width: 220px; padding: 11px 15px; border-top: 2px solid var(--sapient-copper); background: #fff; box-shadow: none; }
+.nav-menu:not([open]) > div { display: none; }
+.nav-menu > div a { padding: 6px 0; color: var(--sapient-indigo); font-size: 12px; font-weight: 600; }
+.nav-menu > div a:hover { color: var(--sapient-copper); }
+
+footer, .leadership-footer { background: var(--sapient-indigo); }
+.footer-brand .logo, .leadership-footer .leadership-logo { width: 185px; }
+.footer-brand .logo img, .leadership-footer .leadership-logo img { width: 185px; }
+.leadership-footer .leadership-logo-mark img { content: url("/sapient-reverse.svg"); }
+.footer-brand p, .leadership-footer-main > div:first-child > p { color: #fff; }
+.footer-brand small, .leadership-footer-main small, .footer-links a, .footer-links span, .leadership-footer-links a { color: rgba(255,255,255,.78); }
+.footer-links p, .leadership-footer-links b { color: var(--sapient-copper); }
+.leadership-footer-main > div:first-child > p { font-size: 0; }
+.leadership-footer-main > div:first-child > p::before { content: "One Gateway. Shared Progress. Pan-African Value."; font-family: "Libre Baskerville", Georgia, serif; font-size: 18px; }
+.leadership-footer-main > div:first-child > small { display: block; font-size: 0; }
+.leadership-footer-main > div:first-child > small::before { content: "Sapient Capital Holdings pools disciplined capital to build resilient businesses and assets that create generational value across Africa."; font-size: 12px; }
+
+.business-card, .leadership-profile, .form-card, .leadership-chart, .leadership-team, .leadership-documents-empty, .profile-dialog, .leadership-dialog { border: 1px solid var(--sapient-border); box-shadow: none; }
+.business-image::before, .construction .business-image::before, .insight-image, .featured-art, .map-placeholder, .page-hero-pattern { background: var(--sapient-indigo) !important; }
+.business-image::after, .insight-image::before, .featured-art::before, .africa-linework { display: none !important; }
+.business-card { background: #fff; }
+.business-card h3, .business-card-copy > p:not(.business-type), .body-copy p, .intro-copy p, .large-copy { color: var(--sapient-charcoal); }
+.business-type, .insight-meta { color: var(--sapient-copper); }
+.value-section, .dark-process, .dark-statement, .leadership-structure-section { background: var(--sapient-indigo); }
+.value-card, .process-row > div { border-color: rgba(255,255,255,.24); }
+.hero-overlay, .leadership-hero-overlay { background: rgba(37,42,98,.79) !important; }
+.hero-photo { filter: none; }
+.page-hero, .page-hero-indigo, .page-hero-agro, .page-hero-construction { background: var(--sapient-indigo) !important; }
+.leadership-initials, .leadership-team.team-one .leadership-initials, .leadership-team.team-two .leadership-initials { background: var(--sapient-indigo) !important; }
+.leadership-team.team-one, .leadership-team.team-two { border-top-color: var(--sapient-copper); }
+.leadership-chart-node.team-one, .leadership-chart-node.team-two { border-left-color: var(--sapient-indigo); }
+.leadership-chart-chief::after, .leadership-chart-executives::before, .leadership-chart-executives .leadership-chart-node::before, .leadership-chart-teams::before, .leadership-chart-teams > div::before { background: rgba(37,42,98,.5); }
+.leadership-chart-node.executive { border-top-color: var(--sapient-copper); }
+.leadership-chart-committee { border-color: var(--sapient-copper); }
+
+.brand-home { overflow: hidden; }
+.brand-hero { position: relative; min-height: 710px; display: flex; align-items: center; color: #fff; background: var(--sapient-indigo); }
+.brand-hero-photo { position: absolute; inset: 0; background: url("/leadership-hero.png") center/cover; opacity: .36; }
+.brand-hero::after { content: ""; position: absolute; right: 8%; bottom: 0; width: min(34vw, 430px); height: min(48vw, 600px); border-right: 2px solid var(--sapient-copper); border-left: 2px solid var(--sapient-copper); opacity: .7; transform: skewX(-17deg); }
+.brand-hero-copy { position: relative; z-index: 1; padding: 118px 0; }
+.brand-hero-copy::before { content: ""; display: block; width: 180px; height: 180px; margin: 0 0 28px; background: url("/sapient-reverse.svg") center / contain no-repeat; }
+.brand-hero-copy .eyebrow { color: #fff; }
+.brand-hero h1 { max-width: 910px; margin-bottom: 28px; color: #fff; font-size: clamp(48px, 6.8vw, 92px); }
+.brand-hero h1 em { color: var(--sapient-copper); }
+.brand-hero p { max-width: 690px; margin-bottom: 33px; color: #fff; font-size: 20px; line-height: 1.65; }
+.brand-home-intro { background: #fff; }
+.brand-home-intro .intro-copy p { max-width: 620px; font-size: 18px; line-height: 1.7; }
+.brand-value-heading { max-width: 650px; }
+.brand-value-grid { display: grid; grid-template-columns: repeat(5, 1fr); margin-top: 44px; border-top: 1px solid rgba(255,255,255,.24); }
+.brand-value-grid article { min-height: 245px; padding: 23px 20px; border-right: 1px solid rgba(255,255,255,.24); }
+.brand-value-grid article:first-child { border-left: 1px solid rgba(255,255,255,.24); }
+.brand-value-grid span { color: var(--sapient-copper); font-size: 12px; font-weight: 700; letter-spacing: .12em; }
+.brand-value-grid h3 { margin: 50px 0 12px; color: #fff; font-family: "Libre Baskerville", Georgia, serif; font-size: 20px; font-weight: 400; }
+.brand-value-grid p { margin: 0; color: rgba(255,255,255,.8); font-size: 14px; line-height: 1.55; }
+.brand-pathway { position: relative; padding: 115px 0; background: var(--sapient-ivory); }
+.brand-pathway::after { content: ""; position: absolute; top: 0; right: 10%; width: 30%; height: 100%; border-right: 1px solid var(--sapient-copper); border-left: 1px solid var(--sapient-copper); opacity: .45; transform: skewX(-18deg); }
+.brand-pathway .container { position: relative; z-index: 1; }
+.brand-pathway p { max-width: 690px; color: var(--sapient-muted); font-size: 20px; }
+.leadership-hero-copy h1 { color: #fff !important; }
+.leadership-hero-copy h1 em { color: var(--sapient-copper); }
+.contact-map { display: block; min-height: 245px; margin-top: 30px; overflow: hidden; border: 1px solid var(--sapient-border); background: var(--sapient-ivory); }
+.contact-map iframe { display: block; width: 100%; min-height: 245px; border: 0; filter: saturate(.72) contrast(.95); }
+.contact-enquiry { align-self: center; max-width: 500px; }
+.contact-enquiry > p:not(.eyebrow) { margin: 22px 0 30px; color: var(--sapient-muted); font-size: 18px; line-height: 1.65; }
+
+@media (max-width: 1040px) {
+  .site-header nav { gap: 14px; }
+  .nav-menu summary { font-size: 11px; }
+  .brand-value-grid { grid-template-columns: repeat(3, 1fr); }
+  .brand-value-grid article:nth-child(4) { border-left: 1px solid rgba(255,255,255,.24); }
+}
+@media (max-width: 760px) {
+  .section { padding: 72px 0; }
+  .header-inner, .leadership-header-inner { min-height: 70px; }
+  .logo, .leadership-logo, .leadership-logo-mark { width: 158px; }
+  .logo img, .leadership-logo img, .leadership-logo-mark img { width: 158px; }
+  .site-header nav, .leadership-site-header nav { top: 70px; background: var(--sapient-ivory); box-shadow: none; }
+  .nav-menu { padding: 10px 0; }
+  .nav-menu summary { font-size: 14px; }
+  .nav-menu > div { position: static; min-width: 0; padding: 7px 0 0 14px; border: 0; background: transparent; }
+  .nav-menu > div a { padding: 5px 0; font-size: 12px; }
+  .brand-hero { min-height: 650px; }
+  .brand-hero-copy { padding: 96px 0 88px; }
+  .brand-hero-copy::before { width: 132px; height: 132px; margin-bottom: 22px; }
+  .brand-hero h1 { font-size: 46px; }
+  .brand-hero p { font-size: 17px; }
+  .brand-hero::after { right: 1%; width: 43vw; }
+  .brand-value-grid { grid-template-columns: 1fr; }
+  .brand-value-grid article, .brand-value-grid article:first-child, .brand-value-grid article:nth-child(4) { min-height: auto; border-right: 1px solid rgba(255,255,255,.24); border-left: 1px solid rgba(255,255,255,.24); }
+  .brand-value-grid h3 { margin-top: 24px; }
+  .footer-brand .logo, .leadership-footer .leadership-logo { width: 180px; }
+  .footer-brand .logo img, .leadership-footer .leadership-logo img { width: 180px; }
+  .contact-map, .contact-map iframe { min-height: 210px; }
+}
+
+/* Refined motion and interaction system */
+.site-header, .leadership-site-header { transition: background .24s ease, border-color .24s ease, box-shadow .24s ease; }
+.brand-hero { min-height: calc(100svh - 82px); }
+.brand-hero-copy { padding: 68px 0 64px; }
+.brand-hero-copy::before { content: none; display: none; }
+.brand-hero-copy .eyebrow { margin-bottom: 15px; }
+.brand-hero h1 { max-width: 760px; margin-bottom: 24px; font-size: clamp(44px, 5.3vw, 72px); line-height: 1.08; }
+.brand-hero-copy > p:not(.eyebrow) { max-width: 720px; margin-bottom: 32px; font-size: clamp(17px, 1.45vw, 20px); }
+.brand-hero-photo { transition: transform 3.6s ease-out; }
+.brand-hero:hover .brand-hero-photo { transform: scale(1.02); }
+.business-image { transition: transform 2.8s ease-out; }
+.business-card:hover .business-image { transform: scale(1.03); }
+.button .arrow { display: inline-block; transition: transform .24s ease; }
+.button:hover .arrow { transform: translateX(3px); }
+
+.nav-menu > div { display: grid; opacity: 0; visibility: hidden; pointer-events: none; transform: translateY(-7px); transition: opacity .2s ease, transform .2s ease, visibility .2s ease; }
+.nav-menu[open] > div { opacity: 1; visibility: visible; pointer-events: auto; transform: translateY(0); }
+.nav-menu:not([open]) > div { display: grid; }
+.leadership-about-menu > div { display: block; opacity: 0; visibility: hidden; pointer-events: none; transform: translateY(-7px); transition: opacity .2s ease, transform .2s ease, visibility .2s ease; }
+.leadership-about-menu:hover > div, .leadership-about-menu:focus-within > div { display: block; opacity: 1; visibility: visible; pointer-events: auto; transform: translateY(0); }
+
+@media (hover: hover) {
+  .business-card, .leadership-profile, .leadership-card, .insight-card, .project-card, .category-list > div, .governance-grid article, .leadership-pillars article, .brand-value-grid article, .leadership-chart-node {
+    transition: transform .24s ease, border-color .24s ease, box-shadow .24s ease;
+  }
+  .business-card:hover, .leadership-profile:hover, .leadership-card:hover, .insight-card:hover, .project-card:hover, .category-list > div:hover, .governance-grid article:hover, .leadership-pillars article:hover, .brand-value-grid article:hover, .leadership-chart-node:hover {
+    transform: translateY(-4px);
+    border-color: rgba(199,107,62,.7);
+    box-shadow: 0 10px 22px rgba(37,42,98,.12);
+  }
+  .text-link .arrow { display: inline-block; transition: transform .24s ease; }
+  .text-link:hover .arrow { transform: translateX(3px); }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .brand-hero-copy .eyebrow { animation: sapientHeroRise .56s ease-out both; }
+  .brand-hero h1 { animation: sapientHeroFade .62s ease-out .11s both; }
+  .brand-hero h1 span { display: block; overflow: hidden; animation: sapientHeroLine .64s ease-out both; animation-delay: calc(.13s + (var(--hero-line) * .15s)); }
+  .brand-hero-copy > p:not(.eyebrow) { animation: sapientHeroRise .58s ease-out .5s both; }
+  .brand-hero-copy .button-row { animation: sapientHeroRise .56s ease-out .66s both; }
+
+  .motion-item, .motion-intro, .motion-heading, .motion-chart {
+    transition: opacity .62s ease-out, transform .62s ease-out;
+    transition-delay: calc(var(--motion-order, 0) * .08s);
+  }
+  .motion-item:not(.is-revealed), .motion-intro:not(.is-revealed), .motion-heading:not(.is-revealed) { opacity: 0; transform: translateY(18px); }
+  .motion-heading { clip-path: inset(0 0 0 0); }
+  .motion-chart .leadership-chart-chief, .motion-chart .leadership-chart-executives, .motion-chart .leadership-chart-teams, .motion-chart .leadership-chart-committee, .motion-chart .chart-chief-row, .motion-chart .chart-executive-row, .motion-chart .chart-operating-row, .motion-chart .chart-committee {
+    transition: opacity .42s ease-out, transform .42s ease-out;
+  }
+  .motion-chart:not(.is-revealed) .leadership-chart-chief, .motion-chart:not(.is-revealed) .leadership-chart-executives, .motion-chart:not(.is-revealed) .leadership-chart-teams, .motion-chart:not(.is-revealed) .leadership-chart-committee, .motion-chart:not(.is-revealed) .chart-chief-row, .motion-chart:not(.is-revealed) .chart-executive-row, .motion-chart:not(.is-revealed) .chart-operating-row, .motion-chart:not(.is-revealed) .chart-committee { opacity: 0; transform: translateY(14px); }
+  .motion-chart.is-revealed .leadership-chart-chief, .motion-chart.is-revealed .chart-chief-row { transition-delay: .08s; }
+  .motion-chart.is-revealed .leadership-chart-executives, .motion-chart.is-revealed .chart-executive-row { transition-delay: .35s; }
+  .motion-chart.is-revealed .leadership-chart-teams, .motion-chart.is-revealed .chart-operating-row { transition-delay: .68s; }
+  .motion-chart.is-revealed .leadership-chart-committee, .motion-chart.is-revealed .chart-committee { transition-delay: .98s; }
+}
+
+@keyframes sapientHeroRise { from { opacity: 0; transform: translateY(16px); } to { opacity: 1; transform: translateY(0); } }
+@keyframes sapientHeroFade { from { opacity: 0; } to { opacity: 1; } }
+@keyframes sapientHeroLine { from { opacity: 0; clip-path: inset(0 100% 0 0); transform: translateY(14px); } to { opacity: 1; clip-path: inset(0 0 0 0); transform: translateY(0); } }
+
+@media (max-width: 760px) {
+  .site-header nav, .leadership-site-header nav { display: flex; opacity: 0; visibility: hidden; pointer-events: none; transform: translateY(-8px); transition: opacity .22s ease, transform .22s ease, visibility .22s ease; }
+  .site-header nav.open, .leadership-site-header nav.open { display: flex; opacity: 1; visibility: visible; pointer-events: auto; transform: translateY(0); }
+  .brand-hero { min-height: auto; }
+  .brand-hero-copy { padding: 66px 0 58px; }
+  .brand-hero h1 { margin-bottom: 20px; font-size: clamp(40px, 12vw, 50px); }
+  .brand-hero-copy > p:not(.eyebrow) { margin-bottom: 28px; }
+  .brand-hero:hover .brand-hero-photo { transform: none; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .brand-hero-copy .eyebrow, .brand-hero h1, .brand-hero h1 span, .brand-hero-copy > p:not(.eyebrow), .brand-hero-copy .button-row, .motion-item, .motion-intro, .motion-heading, .motion-chart, .motion-chart *, .brand-hero-photo, .business-image {
+    animation: none !important;
+    transition: none !important;
+    opacity: 1 !important;
+    transform: none !important;
+    clip-path: none !important;
+  }
+}
